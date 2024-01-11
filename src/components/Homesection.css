@@ -1,0 +1,75 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100% ;
+    position: fixed;
+    z-index: -1;
+}
+
+.hero-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+    object-fit: contain;
+    text-align: left;
+
+}
+
+.hero-container h1{
+    color:  rgb(208, 185, 236);
+    font-size: 80px;
+    margin-top: 8px;
+    margin-left: 6rem;
+    font-family: "Main";
+    text-align: left;
+
+}
+
+.hero-container h1:hover{
+    text-shadow:
+    0 0 15px rgb(144, 119, 174);
+    transition: all 0.2s ease-out;
+}
+
+.hero-container h2{
+    margin-top: -50px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-left: 6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-container p{
+    margin-top: 8px;
+    color: white;
+    font-size: 30px;
+    margin-left: 6rem;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 960px){
+    .hero-container h1{
+        font-size: 60px;
+    }
+    
+    .hero-container p, .hero-container h2{
+        font-size: 20px;
+
+    }
+}
+
+@media screen and (max-width: 768){
+    .hero-container h1{
+        font-size: 45px;
+    }
+
+    .hero-container p, .hero-container h2{
+        font-size: 20px;
+
+    }
+}

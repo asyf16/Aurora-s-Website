@@ -1,0 +1,87 @@
+.portfolio{
+    background: #0A0A11;
+}
+
+.portfolio p{
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.portfolio-wrap{
+    width: 100%;
+}
+
+.img-wrap{
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+.portfolio-wrap img{
+    height: 50vh;
+}
+
+.portfolio-wrap img:hover{
+    box-shadow: 0 0px 40px rgba(137, 137, 228, 0.606);
+    transform: rotate(3deg);
+    transition: all 0.2s ease-out;
+}
+
+.cell{
+    float: left;
+
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.cell h2{
+    text-align: left;
+    color: #9bacee;
+    padding-left: 2rem;
+    font-family: 'Funky';
+    font-size: 20px;
+}
+
+.cell h3{
+    text-align: left;
+    color: #60588b;
+    padding-left: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-bottom: 2rem;
+
+}
+
+.scroll-text{
+    padding-bottom: 2rem;
+}
+
+.portfolio-section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.park-wrap{
+        padding-top: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+    
+}
+
+@media (max-width: 600px) {
+
+    .park-image{
+        width: 90vw;
+    }
+    .park-wrap{
+        padding-right: 0.5rem;
+
+    }
+}

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import "./Popup.css";
@@ -17,7 +17,7 @@ function Contactpage() {
 
   const form = useRef();
   const sendEmail = (e) => {
-    if(document.getElementById("usernameinput").value!="" && document.getElementById("emailinput").value!="" && document.getElementById("messageinput").value!="" ){
+    if(document.getElementById("usernameinput").value!=="" && document.getElementById("emailinput").value!=="" && document.getElementById("messageinput").value!=="" ){
     e.preventDefault();
 
     emailjs
@@ -44,7 +44,7 @@ function Contactpage() {
     <>
       <div className="contact">
         <div className="leftSide">
-            <center><img src="../cat.gif"></img></center>
+            <center><img src="../cat.gif" alt="Rotating Cat"></img></center>
         </div>
         <div className="rightSide">
           <h1>Shoot me a message!</h1>

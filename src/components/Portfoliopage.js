@@ -38,7 +38,7 @@ function Portfoliopage() {
                 </td>
                 <td className="cell">
                   <div className="img-wrap">
-                    <img className="img-wrap" src="https://i.imgur.com/ulA3QKZ.jpg" alt="About Me" />
+                    <img className="img-effect" src="https://i.imgur.com/ulA3QKZ.jpg" alt="About Me" />
                   </div>
                   <h2>Light Addiction</h2>
                   <h3>Linocut print on paper</h3>

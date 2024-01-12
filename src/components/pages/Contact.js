@@ -1,11 +1,11 @@
 import React from 'react'
-import Contactpage from '../Contactpage';
+import Contactme from '../Contactme';
 import Footer from "../Footer";
 
 function Contact() {
   return (
 <>
-<Contactpage/>
+<Contactme/>
 <Footer />
 </>
   )

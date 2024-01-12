@@ -1,10 +1,11 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import "./Contact.css";
+import "./Contactme.css";
 import "./Popup.css";
 
-function Contactpage() {
+function Contactme() {
   const [modal, setModal] = useState(false);
+
   const toggleModal = () => {
     setModal(!modal);
   };
@@ -17,36 +18,45 @@ function Contactpage() {
 
   const form = useRef();
   const sendEmail = (e) => {
-    if(document.getElementById("usernameinput").value!=="" && document.getElementById("emailinput").value!=="" && document.getElementById("messageinput").value!=="" ){
-    e.preventDefault();
+    if (
+      document.getElementById("usernameinput").value !== "" &&
+      document.getElementById("emailinput").value !== "" &&
+      document.getElementById("messageinput").value !== ""
+    ) {
+      e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_l8ejgal",
-        "template_3ry8v0a",
-        form.current,
-        "YiMPRDuUB3VH680FE"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("done");
-          toggleModal();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      emailjs
+        .sendForm(
+          "service_l8ejgal",
+          "template_3ry8v0a",
+          form.current,
+          "YiMPRDuUB3VH680FE"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("done");
+            toggleModal();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
   };
-
+  
   return (
     <>
-      <div className="contact">
-        <div className="leftSide">
-            <center><img src="../cat.gif" alt="Rotating Cat"></img></center>
+
+    <section className="contact">
+      
+      <div className="contact-wrap">
+        <div className="contact-one">
+          <center>
+            <img src="../cat.gif" alt="Rotating Cat"></img>
+          </center>
         </div>
-        <div className="rightSide">
+        <div className="contact-two">
           <h1>Shoot me a message!</h1>
 
           <form id="contact-form" ref={form} onSubmit={sendEmail}>
@@ -60,7 +70,7 @@ function Contactpage() {
             />
             <label>Email</label>
             <input
-            id="emailinput"
+              id="emailinput"
               name="user_email"
               placeholder="Enter email..."
               type="email"
@@ -68,7 +78,7 @@ function Contactpage() {
             />
             <label>Message</label>
             <textarea
-            id="messageinput"
+              id="messageinput"
               rows="6"
               placeholder="Enter message..."
               name="message"
@@ -80,11 +90,11 @@ function Contactpage() {
           </form>
         </div>
       </div>
-
-      {modal && (
-        <div className="modal">
+    </section>
+    {modal && (
+        <div className="modal-wrap">
           <div onClick={toggleModal} className="overlay"></div>
-          <div className="modal-content">
+          <div className="modal-contents">
             <h2>Message sent!</h2>
             <p>Thank you for contacting me. I will get back to you shortly!</p>
             <button
@@ -96,8 +106,9 @@ function Contactpage() {
           </div>
         </div>
       )}
+
     </>
   );
 }
 
-export default Contactpage;
+export default Contactme;

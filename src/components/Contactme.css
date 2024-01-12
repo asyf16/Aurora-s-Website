@@ -1,60 +1,42 @@
-.contact {
+.contact{    
+    background-color: #0A0A11;
+}
+
+.contact-wrap {
+    display: table;
+    border-collapse: collapse;
     width: 100%;
-    display: flex;
-    height: 95vh;
-    background: #0A0A11;
-  }
-  
-  .contact .leftSide {
-    height: 100%;
-    flex: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
   }
 
-  .contact .leftSide img{
+  .contact-one {
+    width: 50%;
+    float: left;
+  }
+  
+  .contact-two {
+    width: 50%;
+    float: right;
+  }
+
+  .contact-one img{
+    padding-top: 6rem;
+    padding-bottom: 5rem;
     border-radius: 50%;
-    width: 80%;
-    margin-top: auto;
-    box-shadow: 0 0px 40px rgba(137, 137, 228, 0.358);
+    width: 75%;
   }
 
-  .contact .leftSide img:hover{
-    box-shadow: 0 0px 40px rgba(137, 137, 228, 0.606);
-    transition: all 0.2s ease-out;
-  }
-  
-  .contact .rightSide {
-    height: 100%;
-    flex: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .contact .rightSide h1 {
-    font-family: "Funky";
-    font-size: 60px;
+  .contact-two h1{
     text-align: left;
-    margin-left:30px
+    padding-top: 6rem;
+    padding-left: 1.5rem;
   }
 
-  .contact .rightSide p {
-    color:  #938ac8;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    margin-left:30px
-
-  }
-  
   form {
     display: flex;
     flex-direction: column;
     width: auto;
     height: auto;
-    padding: 30px;
+    padding: 20px;
   }
   
   form input {
@@ -123,24 +105,31 @@
       }
 
 
-      @media screen and (max-width: 960px){
-        .contact .leftSide {
-            display: none;
-          }
 
-          .contact .rightSide h1 {
-            font-size: 45px;
-          }
-        
-        
+  @media (max-width: 950px) {
+    .contact-one {
+      display: table-footer-group;
+      width: 100%;
     }
-    
-    @media screen and (max-width: 768){
-        .contact .leftSide {
-            display: none;
-          }
-          .contact .rightSide h1 {
-            font-size: 40px;
-          }
+    .contact-two {
+      display: table-header-group;
+      width: 100%;
+    }
+    .contact-one img{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 50%;
+        width: 75%;
+      }
+      form {
+        padding: 40px;
+      }
 
-        }
+      .contact-two h1{
+        text-align: center;
+        padding-left: 0rem;
+        padding-top: 0rem;
+      }
+      
+        
+  }

@@ -187,3 +187,13 @@
       text-align: center;
       padding-bottom: 2rem;
     }
+
+    @media (max-width: 700px) {
+      .Carouselimage{
+        width:70vw;
+      }
+
+      .Carouselimage img{
+        height:70vw;
+      }
+  }

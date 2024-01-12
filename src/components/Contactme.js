@@ -53,7 +53,7 @@ function Contactme() {
       <div className="contact-wrap">
         <div className="contact-one">
           <center>
-            <img src="../cat.gif" alt="Rotating Cat"></img>
+            <img className="catgif" src="../cat.gif" alt="Rotating Cat"></img>
           </center>
         </div>
         <div className="contact-two">

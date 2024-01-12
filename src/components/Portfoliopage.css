@@ -75,13 +75,17 @@ table{
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
 
     .park-image{
         width: 90vw;
     }
     .park-wrap{
         padding-right: 0.5rem;
+
+    }
+    .img-effect{
+        width: 90vw;
 
     }
 }

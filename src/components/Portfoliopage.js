@@ -31,14 +31,14 @@ function Portfoliopage() {
                 </td>
                 <td className="cell">
                   <div className="img-wrap">
-                    <img src="https://i.imgur.com/VRHZ15l.png" alt="About Me" />
+                    <img className="img-effect" src="https://i.imgur.com/VRHZ15l.png" alt="About Me" />
                   </div>
                   <h2>Just a Little More</h2>
                   <h3>Oil pastel on paper</h3>
                 </td>
                 <td className="cell">
                   <div className="img-wrap">
-                    <img src="https://i.imgur.com/ulA3QKZ.jpg" alt="About Me" />
+                    <img  src="https://i.imgur.com/ulA3QKZ.jpg" alt="About Me" />
                   </div>
                   <h2>Light Addiction</h2>
                   <h3>Linocut print on paper</h3>
@@ -52,7 +52,7 @@ function Portfoliopage() {
               <tr className="portfolio-wrap">
                 <td className="cell">
                   <div className="img-wrap">
-                    <img src="https://i.imgur.com/RPasrbX.png" alt="About Me" />
+                    <img  src="https://i.imgur.com/RPasrbX.png" alt="About Me" />
                   </div>
                   <h2>Still Life Study</h2>
                   <h3>Graphite on Paper</h3>
@@ -66,14 +66,14 @@ function Portfoliopage() {
                 </td>
                 <td className="cell">
                   <div className="img-wrap">
-                    <img src="https://i.imgur.com/sD6sJdJ.png" alt="About Me" />
+                    <img  src="https://i.imgur.com/sD6sJdJ.png" alt="About Me" />
                   </div>
                   <h2>Portrait of a Man</h2>
                   <h3>Graphite on paper</h3>
                 </td>
                 <td className="cell">
                   <div className="img-wrap">
-                    <img src="https://i.imgur.com/dmLoNkb.png" alt="About Me" />
+                    <img  src="https://i.imgur.com/dmLoNkb.png" alt="About Me" />
                   </div>
                   <h2>Peruvian Lifestyle</h2>
                   <h3>Marker on paper</h3>
@@ -96,7 +96,7 @@ function Portfoliopage() {
                 </td>
                 <td className="cell">
                   <div className="img-wrap">
-                    <img src="https://i.imgur.com/UkzYOhZ.png" alt="About Me" />
+                    <img className="img-effect" src="https://i.imgur.com/UkzYOhZ.png" alt="About Me" />
                   </div>
                   <h2>Judgement</h2>
                   <h3>Mixed media</h3>
@@ -117,7 +117,7 @@ function Portfoliopage() {
                 </td>
                 <td className="cell">
                   <div className="img-wrap">
-                    <img src="https://i.imgur.com/Q8OoIZC.png" alt="About Me" />
+                    <img className="img-effect" src="https://i.imgur.com/Q8OoIZC.png" alt="About Me" />
                   </div>
                   <h2>Inner Beauty</h2>
                   <h3>Acrylic on canvas</h3>

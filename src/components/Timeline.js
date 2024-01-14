@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faC } from "@fortawesome/free-solid-svg-icons"
 import { faBrush } from "@fortawesome/free-solid-svg-icons"
 import { faPenNib } from "@fortawesome/free-solid-svg-icons";
+import { faComputer }from "@fortawesome/free-solid-svg-icons";
 import { faMedal } from "@fortawesome/free-solid-svg-icons";
 
 function Timeline() {
@@ -60,6 +61,28 @@ function Timeline() {
           <p>
             - Directed art enrichment meetings for 30+ members, leading 25+
             lessons in 2 years
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          dateClassName="datecolor"
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "#433d66" }}
+          contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
+          date="Sep 2021 - Feb 2023"
+          iconStyle={{ background: "#4064b8", color: "#fff" }}
+        icon={<FontAwesomeIcon icon={faComputer} />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Captain | CyberPatriots
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Edmonton, AB</h4>
+          <p>- Led team of 6 students in international cyber security competition hosted by the Air & Space Forces Association</p>
+          <p>
+            - Secured Windows, Linux, and Server systems from cyber security threats
+          </p>
+          <p>
+            - Placed in the top 2.5% out of 3000+ teams
           </p>
         </VerticalTimelineElement>
 

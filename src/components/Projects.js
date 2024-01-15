@@ -16,7 +16,7 @@ function Projects() {
           <ul className="cards__items">
               <Item
                 src="/Bin.gif"
-                text="IntelliBin is an AI trashcan that handles your trash sorting for you! Simply place your trash onto our machine, and watch it be sorted automatically by IntelliBin's servo arm! Furthermore, track your stats and learn more about recycling on our React.js website connected to a MongoDB database.                !"
+                text="Second place overall winner of DeltaHacks X, the annual hackathon for change. IntelliBin is an AI trashcan that handles your trash sorting for you! Simply place your trash onto our machine, and watch it be sorted automatically by IntelliBin's servo arm! Furthermore, track your stats and learn more about recycling on our React.js website connected to a MongoDB database.                !"
                 label="IntelliBin"
                 path="https://github.com/asyf16/Intellibin"
               />

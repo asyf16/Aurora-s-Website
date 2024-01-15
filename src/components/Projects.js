@@ -13,10 +13,19 @@ function Projects() {
         <p>Explore some projects that I am passionate about!</p>
         <div className="cards__container">
           <div className="cards__wrapper">
+          <ul className="cards__items">
+              <Item
+                src="/Bin.gif"
+                text="IntelliBin is an AI trashcan that handles your trash sorting for you! Simply place your trash onto our machine, and watch it be sorted automatically by IntelliBin's servo arm! Furthermore, track your stats and learn more about recycling on our React.js website connected to a MongoDB database.                !"
+                label="IntelliBin"
+                path="https://github.com/asyf16/Intellibin"
+              />
+            </ul>
+
             <ul className="cards__items">
               <Item
                 src="/eyeDentify.gif"
-                text="Never forget a face again! Made using Python's face recognition library, EyeDentify is a Raspberry Pi powered headset that allows you to see the world with real-time facial recognition!"
+                text="Never forget a face again! Made using Python's face recognition library, EyeDentify is a Raspberry Pi powered headset that allows you to see the world from your normal point of view, but inlaid with real-time facial recognition!"
                 label="EyeDentify"
                 path="https://github.com/asyf16/EyeDentify"
               />
@@ -24,7 +33,7 @@ function Projects() {
             <ul className="cards__items">
               <Item
                 src="/CalTrack.gif"
-                text="Don't give up on your New Year's resolution just yet... Created using Google Cloud's Vision API, CalTrack is an intuitive application that allows you to detect and track the calories in every meal from a simple photo of your food!"
+                text="Don't give up on your New Year's resolution just yet... Created using Google Cloud's Vision API, CalTrack is an intuitive application that allows you to detect and track the calories in every meal with AI from a simple photo of your food!"
                 label="CalTrack"
                 path="https://github.com/asyf16/CalTrack"
               />

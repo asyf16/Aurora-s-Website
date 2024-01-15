@@ -51,7 +51,7 @@ function Aboutinfo() {
 
             <Link
               className="social-icon-link download"
-              to="https://drive.google.com/file/d/1RxFpdC8As-QI-p4TNNHps1aRdFWNeSnM/view?usp=sharing"
+              to="https://drive.google.com/drive/folders/1LxYEXHacO-xeabSRKWcw-p50hZqi-ae6?usp=drive_link"
               target="_blank"
             >
               <FontAwesomeIcon icon={faDownload} />

@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
 function Nav() {
+
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const closeMenu = () => setClick(false);
+  const closeMenu = () => {
+    setClick(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   const [button, setButton] = useState(true);
   const showButton = () => {
     if(window.innerWidth <=960){

@@ -5,7 +5,24 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
+  button{
+    font-family:'Main';
+    background-color: #2f285d;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 0.5rem;
+    color: #938ac8;
+    border-radius: 1.5rem;
+    border: 2px solid #494082;
+  }
 
+  button:hover{
+    background-color: #42387f;
+    color: #938ac8;
+    border: 2px solid #494082;
+  }
   
 .field {
     margin-top: 20px;

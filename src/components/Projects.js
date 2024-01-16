@@ -9,16 +9,17 @@ function Projects() {
   return (
     <>
       <div className="cards">
-        <h1>Projects</h1>
-        <p>Explore some projects that I am passionate about!</p>
+      <h1>Projects</h1>
+      <p>Explore some projects that I am passionate about!</p>
         <div className="cards__container">
           <div className="cards__wrapper">
-          <ul className="cards__items">
+            <ul className="cards__items">
               <Item
                 src="/Bin.gif"
-                text="Second place overall winner of DeltaHacks X, the annual hackathon for change. IntelliBin is an AI trashcan that handles your trash sorting for you! Simply place your trash onto our machine, and watch it be sorted automatically by IntelliBin's servo arm! Furthermore, track your stats and learn more about recycling on our React.js website connected to a MongoDB database.                !"
+                text="IntelliBin is an AI trashcan that handles your trash sorting for you! Simply place your trash onto our machine, and watch it be sorted automatically by IntelliBin's servo arm! Furthermore, track your stats and learn more about recycling on our React.js website connected to a MongoDB database. Second place overall winner of DeltaHacks X, the annual hackathon for change."
                 label="IntelliBin"
                 path="https://github.com/asyf16/Intellibin"
+                // language={["python", "java"]}
               />
             </ul>
 

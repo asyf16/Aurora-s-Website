@@ -54,6 +54,21 @@ function Card() {
               path='https://www.shad.ca/'
             />
           </ul>
+
+          <ul className='cards__items'>
+            <Item
+              src='https://uwaterloo.ca/news/sites/ca.news/files/styles/feature_large/public/dsc_1298_full_res__3.jpg?itok=3rMVGwW8'
+              text='$2000 entrance scholarship offered by the University of Waterloo for maintaining an average of 95%+.'
+              label="President's Scholarship"
+              path='https://uwaterloo.ca/future-students/financing/scholarships/presidents-scholarships'
+            />
+            <Item
+              src='https://www.stripes.com/incoming/njo73l-040722rimpac-canadaphoto01.jpg/alternates/LANDSCAPE_910/040722RIMPAC-CANADAphoto01.jpg'
+              text='Designed patch for the 2022 Rim of the Pacific (RIMPAC) exercise, winning silver in the competition and recognized by the HMCS navy.'
+              label='RIMPAC Design Challenge'
+              path="https://en.wikipedia.org/wiki/Exercise_RIMPAC"
+            />
+          </ul>
           <ul className='cards__items'>
             <Item
               src='https://www.skillscompetencescanada.com/wp-content/uploads/2021/03/default_grey.png'

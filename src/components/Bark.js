@@ -1,13 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../App.css";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 function Bark() {
+  useEffect(()=>{
+    Aos.init({duration:1000});
+
+  }, [])
+
   return (
     <>
       <div className="Carouselcontainer">
-        <div className="Carouselimage">
+        <div data-aos='fade-up' className="Carouselimage">
           <Carousel indicators={false} className="Carousel-wrap" touch={true}>
             <Carousel.Item>
               <img
@@ -172,9 +179,9 @@ function Bark() {
           </Carousel>
           <Link className="bark-link" to="https://www.bnaibrith.ca/tags/a-bark-to-be-proud-of/"
               target="_blank">
-            <h2 className="bark-title">A Bark to be Proud of</h2>
+            <h2 data-aos='fade-up'className="bark-title">A Bark to be Proud of</h2>
           </Link>
-          <p className="bark-para">
+          <p data-aos='fade-up'className="bark-para">
             Authored and illustrated original storybook, winning $3000 in the
             Diverse Minds competition and officially published and distributed
             to elementary schools and libraries across Edmonton.

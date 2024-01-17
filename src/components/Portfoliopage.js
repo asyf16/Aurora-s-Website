@@ -1,11 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Portfoliopage.css";
 import Bark from "./Bark";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
 
 function Portfoliopage() {
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  useEffect(()=>{
+    Aos.init({duration:1000});
+
+  }, [])
+
   return (
     <>
       <div className="portfolio">
@@ -22,21 +31,21 @@ function Portfoliopage() {
           <table className="whole-portfolio">
             <center>
               <tr className="portfolio-wrap">
-                <td className="cell">
+                <td  data-aos='fade-up' className="cell">
                   <div className="img-wrap">
                     <img src="https://i.imgur.com/XrBEyeO.png" alt="About Me" />
                   </div>
                   <h2>Worst Enemy</h2>
                   <h3>Acrylic on canvas</h3>
                 </td>
-                <td className="cell">
+                <td data-aos='fade-up' data-aos-delay="400"  className="cell">
                   <div className="img-wrap">
                     <img className="img-effect" src="https://i.imgur.com/VRHZ15l.png" alt="About Me" />
                   </div>
                   <h2>Just a Little More</h2>
                   <h3>Oil pastel on paper</h3>
                 </td>
-                <td className="cell">
+                <td data-aos='fade-up' data-aos-delay="800" className="cell">
                   <div className="img-wrap">
                     <img className="img-effect" src="https://i.imgur.com/ulA3QKZ.jpg" alt="About Me" />
                   </div>
@@ -50,28 +59,28 @@ function Portfoliopage() {
           <table className="whole-portfolio">
             <center>
               <tr className="portfolio-wrap">
-                <td className="cell">
+                <td data-aos='fade-up'className="cell">
                   <div className="img-wrap">
                     <img  src="https://i.imgur.com/RPasrbX.png" alt="About Me" />
                   </div>
                   <h2>Still Life Study</h2>
                   <h3>Graphite on Paper</h3>
                 </td>
-                <td className="cell">
+                <td data-aos='fade-up' data-aos-delay="400"className="cell">
                   <div className="img-wrap">
                     <img src="https://i.imgur.com/msE51Ih.png" alt="About Me" />
                   </div>
                   <h2>Painting of a Man</h2>
                   <h3>Oil paint on canvas</h3>
                 </td>
-                <td className="cell">
+                <td data-aos='fade-up' data-aos-delay="800" className="cell">
                   <div className="img-wrap">
                     <img  src="https://i.imgur.com/sD6sJdJ.png" alt="About Me" />
                   </div>
                   <h2>Portrait of a Man</h2>
                   <h3>Graphite on paper</h3>
                 </td>
-                <td className="cell">
+                <td data-aos='fade-up' data-aos-delay="1200" className="cell">
                   <div className="img-wrap">
                     <img  src="https://i.imgur.com/dmLoNkb.png" alt="About Me" />
                   </div>
@@ -82,19 +91,19 @@ function Portfoliopage() {
             </center>
           </table>
 
-          <Bark />
+          <Bark/>
 
           <table className="whole-portfolio">
             <center>
-              <tr className="portfolio-wrap">
-                <td className="cell">
+              <tr  className="portfolio-wrap">
+                <td data-aos='fade-up' className="cell">
                   <div className="park-wrap">
                     <img className="park-image"src="https://i.imgur.com/LHAEOIo.png" alt="About Me" />
                   </div>
                   <h2>Park of the Future</h2>
                   <h3>Mixed media</h3>
                 </td>
-                <td className="cell">
+                <td data-aos='fade-up' data-aos-delay="400" className="cell">
                   <div className="img-wrap">
                     <img className="img-effect" src="https://i.imgur.com/UkzYOhZ.png" alt="About Me" />
                   </div>
@@ -108,21 +117,21 @@ function Portfoliopage() {
           <table className="whole-portfolio">
             <center>
               <tr className="portfolio-wrap">
-                <td className="cell">
+                <td data-aos='fade-up' className="cell">
                   <div className="img-wrap">
                     <img src="https://i.imgur.com/eS5rNtK.png" alt="About Me" />
                   </div>
                   <h2>Gone Fishing</h2>
                   <h3>Yarn on cardboard</h3>
                 </td>
-                <td className="cell">
+                <td data-aos='fade-up' data-aos-delay="400" className="cell">
                   <div className="img-wrap">
                     <img className="img-effect" src="https://i.imgur.com/Q8OoIZC.png" alt="About Me" />
                   </div>
                   <h2>Inner Beauty</h2>
                   <h3>Acrylic on canvas</h3>
                 </td>
-                <td className="cell">
+                <td data-aos='fade-up' data-aos-delay="800" className="cell">
                   <div className="img-wrap">
                     <img src="https://i.imgur.com/TBVx4iS.png" alt="About Me" />
                   </div>

@@ -1,23 +1,31 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Card.css';
 import Item from './Item';
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 function Card() {
   const handleScrollToTop=() =>{
     window.scrollTo({top:0, behavior:'smooth'});
   }
+
+  useEffect(()=>{
+    Aos.init({duration:1000});
+
+  }, [])
+
   return (
     <div className='cards'>
         <h1>Awards</h1>
         <p>The awards I have received showcase both my passions and skills.</p>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          <ul className='cards__items'>
+          <ul className='cards__items' data-aos='fade-up'>
             <Item
               src='https://i.imgur.com/YBFHMxU.jpg'
               text='Graduated with highest academic grade of 99.6% from Old Scona Academic.'
               label='Valedictorian'
-              path='https://edmontonsun.com/news/valedictorians-2023-old-sconas-aurora-shi'
+              path='https://edmontonsun.com/news/valedictorians-2023-old-sconas-aurora-shi' 
             />
             <Item
               src='https://i.imgur.com/4IE35XW.jpg'
@@ -26,7 +34,7 @@ function Card() {
               path='https://www.epsb.ca/media/epsb/schools/goingtoschool/studentawards/EPSB_Michael_Strembitsky_Award_Recipients_Guide_2023.pdf'
             />
           </ul>
-          <ul className='cards__items'>
+          <ul data-aos='fade-up' className='cards__items'>
             <Item
               src='https://i.imgur.com/bF2yyba.png'
               text='Won $2500 by creating video game teaching financial skills, placing third nationally in competition sponsored by CIBC.'
@@ -40,7 +48,7 @@ function Card() {
               path='https://www.dmshop.ca/products/a-bark-to-be-proud-of'
             />
           </ul>
-          <ul className='cards__items'>
+          <ul data-aos='fade-up' className='cards__items'>
             <Item
               src='https://i.imgur.com/IFZkHKw.jpg'
               text='$2500 scholarship presented by P.E.O. International for exceptional women attending accredited postsecondaries.'
@@ -55,7 +63,7 @@ function Card() {
             />
           </ul>
 
-          <ul className='cards__items'>
+          <ul data-aos='fade-up' className='cards__items'>
             <Item
               src='https://uwaterloo.ca/news/sites/ca.news/files/styles/feature_large/public/dsc_1298_full_res__3.jpg?itok=3rMVGwW8'
               text='$2000 entrance scholarship offered by the University of Waterloo for maintaining an average of 95%+.'
@@ -69,7 +77,7 @@ function Card() {
               path="https://en.wikipedia.org/wiki/Exercise_RIMPAC"
             />
           </ul>
-          <ul className='cards__items'>
+          <ul data-aos='fade-up' className='cards__items'>
             <Item
               src='https://www.skillscompetencescanada.com/wp-content/uploads/2021/03/default_grey.png'
               text='Placed bronze in Skills Canada Graphic Design competition by creating logos and brochures for drone company.'

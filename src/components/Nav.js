@@ -2,6 +2,7 @@ import "./Nav.css"
 import '../App.css';
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import {myFunc} from "./MyFunc"
 
 function Nav() {
 
@@ -10,6 +11,8 @@ function Nav() {
   const closeMenu = () => {
     setClick(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
+    window.removeEventListener('scroll', myFunc);
+
   }
   const [button, setButton] = useState(true);
   const showButton = () => {

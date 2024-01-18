@@ -6,10 +6,17 @@ import Home from './components/pages/Home'
 import Portfolio from './components/pages/Portfolio'
 import Contact from './components/pages/Contact'
 import Works from './components/pages/Works'
-
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-5V3NKB08ZT');
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
   return (
     <>
     <Router>

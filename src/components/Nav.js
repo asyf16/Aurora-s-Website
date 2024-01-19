@@ -1,52 +1,62 @@
-import "./Nav.css"
-import '../App.css';
+import "./Nav.css";
+import "../App.css";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import {myFunc} from "./MyFunc"
+import { myFunc } from "./MyFunc";
 
 function Nav() {
-
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMenu = () => {
     setClick(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
-    window.removeEventListener('scroll', myFunc);
-
-  }
+    window.removeEventListener("scroll", myFunc);
+  };
   const [button, setButton] = useState(true);
   const showButton = () => {
-    if(window.innerWidth <=960){
-        setButton(false)
-    } else{
-        setButton(true)
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
     }
-  }
-
+  };
 
   useEffect(() => {
     showButton();
-  },[])
+  }, []);
 
-  window.addEventListener('resize', showButton);
+  window.addEventListener("resize", showButton);
 
   return (
     <>
       <nav className="nav">
-        <div className="nav-container" >
+        <div className="nav-container">
           <Link to="/" className="nav-logo" onClick={closeMenu}>
             Aurora Shi
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
+
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item" onClick={(e) => {e.preventDefault(); window.location.replace('/#home');}}>
+            <li
+              className="nav-item"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.replace("/#home");
+              }}
+            >
               <Link to="/" className="nav-links" onClick={closeMenu}>
                 Home
               </Link>
             </li>
-            <li className="nav-item" onClick={(e) => {e.preventDefault(); window.location.replace('/#about');}}>
+            <li
+              className="nav-item"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.replace("/#about");
+              }}
+            >
               <Link className="nav-links" onClick={closeMenu}>
                 About
               </Link>

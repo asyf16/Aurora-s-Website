@@ -2,6 +2,8 @@ import React from 'react'
 import Footer from "../Footer";
 import Parallax from '../Parallax';
 import Projectpage from '../Projectpage';
+import RingLoader from "react-spinners/RingLoader";
+
 function Works() {
   return (
 <>

@@ -17,7 +17,12 @@
     border-radius: 1.5rem;
     border: 2px solid #494082;
   }
-
+  .loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   button:hover{
     background-color: #42387f;
     color: #938ac8;

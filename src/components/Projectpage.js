@@ -47,12 +47,15 @@ function Projectpage() {
           <p  data-aos="fade-in">
             {" "}
             Furthermore, track your stats and learn more about recycling on our
-            React.js website connected to a MongoDB database. Second place
+            React.js website connected to Firebase. Second place
             overall winner at DeltaHacks X.
           </p>
           <div className="icon-wrap">
             <button  data-aos="fade-in"className="icon-house">
               <p>MongoDB</p>
+            </button>
+            <button  data-aos="fade-in"className="icon-house">
+              <p>FireBase</p>
             </button>
             <button  data-aos="fade-in"className="icon-house">
               <p>React.js</p>

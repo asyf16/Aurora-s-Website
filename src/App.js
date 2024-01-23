@@ -7,6 +7,7 @@ import Portfolio from "./components/pages/Portfolio";
 import Contact from "./components/pages/Contact";
 import Works from "./components/pages/Works";
 import RingLoader from "react-spinners/RingLoader";
+import Sound from "./components/Sound";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -14,7 +15,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4500);
+    }, 4000);
   }, []);
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
       ) : (
         <Router>
           <Nav />
+          <Sound />
           <Routes>
             <Route path="/" exact element={<Home />}></Route>
             <Route path="/portfolio" exact element={<Portfolio />}></Route>

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 
@@ -39,7 +41,7 @@ function Aboutinfo() {
               to="https://www.instagram.com/aurorashi16/"
               target="_blank"
             >
-              <i className="fab fa-instagram"></i>
+              <FontAwesomeIcon icon={faInstagram} />
             </Link>
             <Link
               className="social-icon-link github"
@@ -53,7 +55,7 @@ function Aboutinfo() {
               to="https://www.linkedin.com/in/aurora-shi-387656247/"
               target="_blank"
             >
-              <i className="fab fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </Link>
 
             <Link

@@ -7,11 +7,13 @@ import "react-vertical-timeline-component/style.min.css";
 import "./Timeline.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faC } from "@fortawesome/free-solid-svg-icons"
-import { faBrush } from "@fortawesome/free-solid-svg-icons"
+import { faBrush } from "@fortawesome/free-solid-svg-icons";
 import { faPenNib } from "@fortawesome/free-solid-svg-icons";
-import { faComputer }from "@fortawesome/free-solid-svg-icons";
+import { faComputer } from "@fortawesome/free-solid-svg-icons";
 import { faMedal } from "@fortawesome/free-solid-svg-icons";
+import { faI } from "@fortawesome/free-solid-svg-icons";
+import { faMountain } from "@fortawesome/free-solid-svg-icons";
+import { GiBullHorns } from "react-icons/gi";
 
 function Timeline() {
   return (
@@ -21,13 +23,50 @@ function Timeline() {
         <VerticalTimelineElement
           dateClassName="datecolor"
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#433d66"}}
+          contentStyle={{ background: "#433d66" }}
+          contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
+          date="Sep 2024 - present"
+          iconStyle={{ background: "#4064b8", color: "#fff" }}
+          icon={<GiBullHorns />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Frontend Developer | WatStreet
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          dateClassName="datecolor"
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "#433d66" }}
+          contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
+          date="May 2024 - Aug 2024"
+          iconStyle={{ background: "#4064b8", color: "#fff" }}
+          icon={<FontAwesomeIcon icon={faI} />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Software Developer | ISARA Corp.
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
+          <p>
+            - Redesigned application's cryptographic risk scoring process,
+            enhancing risk assessment accuracy by 80%.
+          </p>
+          <p>
+            - Collaborated with QA team to resolve system bugs, resulting in a
+            60% reduction in application failures and efficiency increase.
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          dateClassName="datecolor"
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "#433d66" }}
           contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
           date="Nov 2023 - present"
           iconStyle={{ background: "#4064b8", color: "#fff" }}
-          icon={<FontAwesomeIcon icon={faC} />}
+          icon={<FontAwesomeIcon icon={faMountain} />}
         >
-
           <h3 className="vertical-timeline-element-title">
             Web Developer | Case Mining
           </h3>
@@ -48,7 +87,7 @@ function Timeline() {
           contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
           date="Sep 2021 - July 2023"
           iconStyle={{ background: "#4064b8", color: "#fff" }}
-        icon={<FontAwesomeIcon icon={faBrush} />}
+          icon={<FontAwesomeIcon icon={faBrush} />}
         >
           <h3 className="vertical-timeline-element-title">
             President | Art Society
@@ -71,19 +110,21 @@ function Timeline() {
           contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
           date="Sep 2021 - Feb 2023"
           iconStyle={{ background: "#4064b8", color: "#fff" }}
-        icon={<FontAwesomeIcon icon={faComputer} />}
+          icon={<FontAwesomeIcon icon={faComputer} />}
         >
           <h3 className="vertical-timeline-element-title">
             Captain | CyberPatriots
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Edmonton, AB</h4>
-          <p>- Led team of 6 students in international cyber security competition hosted by the Air & Space Forces Association</p>
           <p>
-            - Secured Windows, Linux, and Server systems from cyber security threats
+            - Led team of 6 students in international cyber security competition
+            hosted by the Air & Space Forces Association
           </p>
           <p>
-            - Placed in the top 2.5% out of 3000+ teams
+            - Secured Windows, Linux, and Server systems from cyber security
+            threats
           </p>
+          <p>- Placed in the top 2.5% out of 3000+ teams</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement

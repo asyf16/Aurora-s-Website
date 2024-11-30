@@ -27,10 +27,10 @@ function Contactme() {
 
       emailjs
         .sendForm(
-          "service_l8ejgal",
-          "template_3ry8v0a",
+          "service_qrtwlhs",
+          "Aurora",
           form.current,
-          "YiMPRDuUB3VH680FE"
+          "ZwqjXWKTtI1_vrmd1"
         )
         .then(
           (result) => {

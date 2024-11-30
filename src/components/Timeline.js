@@ -8,11 +8,10 @@ import "./Timeline.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrush } from "@fortawesome/free-solid-svg-icons";
-import { faPenNib } from "@fortawesome/free-solid-svg-icons";
 import { faComputer } from "@fortawesome/free-solid-svg-icons";
-import { faMedal } from "@fortawesome/free-solid-svg-icons";
 import { faI } from "@fortawesome/free-solid-svg-icons";
 import { faMountain } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { GiBullHorns } from "react-icons/gi";
 
 function Timeline() {
@@ -20,6 +19,7 @@ function Timeline() {
     <section className="timelinecontainer">
       <h1>Experience</h1>
       <VerticalTimeline lineColor={"white"}>
+
         <VerticalTimelineElement
           dateClassName="datecolor"
           className="vertical-timeline-element--work"
@@ -32,6 +32,27 @@ function Timeline() {
           <h3 className="vertical-timeline-element-title">
             Frontend Developer | WatStreet
           </h3>
+          <p>
+            - Developing Options Strategy Builder to create complex strategies for stock profit analysis.
+          </p>
+          <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          dateClassName="datecolor"
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "#433d66" }}
+          contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
+          date="Nov 2024 - present"
+          iconStyle={{ background: "#4064b8", color: "#fff" }}
+          icon={<FontAwesomeIcon icon={faSun} />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Web Developer | Hack the 6ixth
+          </h3>
+          <p>
+            - Developing hacker and admin dashboards for Toronto's largest summer hackathon.
+          </p>
           <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
         </VerticalTimelineElement>
 
@@ -125,52 +146,6 @@ function Timeline() {
             threats
           </p>
           <p>- Placed in the top 2.5% out of 3000+ teams</p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          dateClassName="datecolor"
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#433d66" }}
-          contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
-          date="Sep 2021 - Apr 2022"
-          iconStyle={{ background: "#4064b8", color: "#fff" }}
-          icon={<FontAwesomeIcon icon={faPenNib} />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Graphic Designer | Canada Confesses
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Edmonton, AB</h4>
-          <p>
-            - Designed engaging social media campaigns for federally-funded
-            program
-          </p>
-          <p>
-            - Brought awareness to social injustices through designs, reaching
-            audience of 16,000+
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          dateClassName="datecolor"
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#433d66" }}
-          contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
-          date="Sep 2021 - Feb 2022"
-          iconStyle={{ background: "#4064b8", color: "#fff" }}
-          icon={<FontAwesomeIcon icon={faMedal} />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Assistant Coach | Edmonton Fencing Club
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Edmonton, AB</h4>
-          <p>
-            - Worked alongside head coach of one of the largest fencing club in
-            North America
-          </p>
-          <p>- Led groups of 20+ students in exercises </p>
-          <p>
-            - Monitored student progress, organized equipment, judged matches
-          </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </section>

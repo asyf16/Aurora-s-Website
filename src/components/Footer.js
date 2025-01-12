@@ -12,7 +12,7 @@ function Footer() {
       <div className='footer-container'>
           <section className="social-media">
               <div className="social-media-wrap">
-                  <small className='website-rights'>Aurora Shi © 2024</small>
+                  <small className='website-rights'>Aurora Shi © 2025</small>
                   <div className="social-icons">
                       <a className="social-icon-link email" href = "mailto: Aurorashi16@gmail.com">
                       <FontAwesomeIcon icon={faEnvelope} />

@@ -13,12 +13,31 @@ import { faI } from "@fortawesome/free-solid-svg-icons";
 import { faMountain } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { GiBullHorns } from "react-icons/gi";
+import { FaComputer } from "react-icons/fa6";
+
 
 function Timeline() {
   return (
     <section className="timelinecontainer">
       <h1>Experience</h1>
       <VerticalTimeline lineColor={"white"}>
+        <VerticalTimelineElement
+          dateClassName="datecolor"
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "#433d66" }}
+          contentArrowStyle={{ borderRight: "7px solid  #433d66" }}
+          date="Jan 2025 - present"
+          iconStyle={{ background: "#4064b8", color: "#fff" }}
+          icon={<FaComputer />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Software Engineer | Bloomberg
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">New York, NY</h4>
+          <p>
+            - Contributing to the Engineering Subscriptions and Growth team.
+          </p>
+        </VerticalTimelineElement>
 
         <VerticalTimelineElement
           dateClassName="datecolor"
@@ -32,10 +51,11 @@ function Timeline() {
           <h3 className="vertical-timeline-element-title">
             Frontend Developer | WatStreet
           </h3>
-          <p>
-            - Developing Options Strategy Builder to create complex strategies for stock profit analysis.
-          </p>
           <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
+          <p>
+            - Developing Options Strategy Builder to create complex strategies
+            for stock profit analysis.
+          </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -50,10 +70,11 @@ function Timeline() {
           <h3 className="vertical-timeline-element-title">
             Web Developer | Hack the 6ixth
           </h3>
-          <p>
-            - Developing hacker and admin dashboards for Toronto's largest summer hackathon.
-          </p>
           <h4 className="vertical-timeline-element-subtitle">Waterloo, ON</h4>
+          <p>
+            - Developing hacker and admin dashboards for Toronto's largest
+            summer hackathon.
+          </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -101,7 +122,7 @@ function Timeline() {
           </p>
         </VerticalTimelineElement>
 
-        <VerticalTimelineElement
+        {/* <VerticalTimelineElement
           dateClassName="datecolor"
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#433d66" }}
@@ -146,7 +167,7 @@ function Timeline() {
             threats
           </p>
           <p>- Placed in the top 2.5% out of 3000+ teams</p>
-        </VerticalTimelineElement>
+        </VerticalTimelineElement> */}
       </VerticalTimeline>
     </section>
   );

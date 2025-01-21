@@ -57,15 +57,17 @@ function Homesection() {
     <>
       <div className="hero-container" id="home">
         <video src="/bg2.mp4" autoPlay loop muted />
-        <h2>{text} I'm</h2>
-        <h1>Aurora Shi,</h1>
-        <p>A Software Engineering student at the University of Waterloo</p>
-        <div class="field">
-          <div class="scroll" onClick={scrollAbout}></div>
+        <div className="hero-content">
+          <h2>{text} I'm</h2>
+          <h1>Aurora Shi,</h1>
+          <p>A Software Engineering student at the University of Waterloo</p>
+          <div class="field">
+            <div class="scroll" onClick={scrollAbout}></div>
+          </div>
         </div>
       </div>
       <section ref={ref} id="about">
-        <Aboutinfo/>
+        <Aboutinfo />
       </section>
     </>
   );
